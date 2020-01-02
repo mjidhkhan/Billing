@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css?family=Abel&display=swap');
+body{
+    font-family: 'Abel', sans-serif;
+    background: #FFF;
+}
+.shadow {
+    box-shadow: 0 0rem 0rem rgba(0, 0, 0, 0.15) !important;
+}
+.content{
+    margin-top:4rem !important;
+}
+
+.display-8{
+    color:rgb(211, 211, 211) !important;
+}
+.indigo.darken-2 {
+    background-color: #eeeeee !important;
+    font-size: 1.2rem !important;
+    font-weight: 500 !important;
+    line-height: 1.2 !important;
+    color:#000 !important;
+}
+.text-white{
+    color:rgb(37, 37, 37) !important;
+}
+.grey{
+    color:rgb(37, 37, 37) !important;
+}
+.green.darken-2 {
+    background-color: #eeeeee !important;
+    font-size: 1.2rem !important;
+    font-weight: 500 !important;
+    line-height: 1.2 !important;
+    color:#000 !important;
+}
+table {
+    color:#eeeeee !important;
+}
+.hide{
+    display: inline-block !important;
+    margin-bottom: 2rem !important;
+    color: #000000 !important;
+}
+.table {
+    width: 100% !important;
+    margin-bottom: 1rem !important;
+    color: #9d9e9e !important;
+    vertical-align: top !important;
+}
+
+.features {
+    margin: 0 0 0 0 !important;
+}
+.features {
+    border: solid 0px rgba(255, 255, 255, 0.15) !important;
+}
+
+.features {
+   display: flex !important;
+   flex-wrap: wrap !important;
+   border-radius: 0.0em !important;;
+   border: solid 0px rgba(255, 255, 255, 0.15);
+   background: rgba(255, 255, 255, 0.05) !important;
+   margin: 0 0 0em 0 !important;
+  
+}
+
+/** **************************** **/

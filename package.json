@@ -1,0 +1,76 @@
+{
+    "name": "g3tbilling",
+    "productName": "G3TBilling",
+    "version": "1.0.0",
+    "description": "G3T Billing Information",
+    "private": true,
+    "main": "main.js",
+    "scripts": {
+        "start": "electron .",
+        "dev": "electron . --debug",
+        "test": "mocha && standard",
+        "package": "npm-run-all package:w",
+        "build": "electron-packager . --overwrite --platform=win32 --arch=ia32 --out=out --icon=assets/app-icon/win/g3t.ico",
+        "pack:win32": "electron-packager . --overwrite --asar=true --platform=win32 --arch=ia32 --icon=assets/app-icon/win/g3t.ico --prune=true --out=release-builds",
+        "winstaller": "node script/installers/windows/createinstaller.js",
+        "msi": "node build_installer.js",
+        "prepack": "check-for-leaks",
+        "prepush": "check-for-leaks"
+    },
+    "repository": "",
+    "keywords": [
+        "G3T",
+        "Billing",
+        "APP"
+    ],
+    "author": "Group 3 Technology Ltd",
+    "license": "MIT",
+    "devDependencies": {
+        "chai": "^3.4.1",
+        "chai-as-promised": "^6.0.0",
+        "check-for-leaks": "^1.2.1",
+        "devtron": "^1.3.0",
+        "electron": "^6.0.2",
+        "electron-is-dev": "^1.1.0",
+        "electron-packager": "^12.1.0",
+        "electron-winstaller": "^2.7.0",
+        "electron-wix-msi": "^2.1.1",
+        "husky": "^0.14.3",
+        "mocha": "^6.2.0",
+        "npm-run-all": "^4.0.2",
+        "request": "^2.70.0",
+        "rimraf": "^2.7.1",
+        "signcode": "^0.5.0",
+        "spectron": "~3.6.0",
+        "standard": "^8.2.0"
+    },
+    "dependencies": {
+        "bluebird": "^3.5.5",
+        "bootstrap": "^4.3.1",
+        "convert-csv-to-array": "^1.0.3",
+        "custom-electron-titlebar": "^3.1.0",
+        "electron-config": "^2.0.0",
+        "electron-is": "^3.0.0",
+        "electron-json-storage": "^4.1.7",
+        "electron-progressbar": "^1.2.0",
+        "electron-settings": "^3.2.0",
+        "electron-shortcut-normalizer": "^1.0.0",
+        "electron-window-state": "^5.0.3",
+        "fast-csv": "*",
+        "glob": "^7.1.4",
+        "global": "^4.4.0",
+        "highlight.js": "^9.15.9",
+        "jquery": "^3.4.1",
+        "makedir": "0.0.11",
+        "popper": "^1.0.1",
+        "popper.js": "^1.15.0",
+        "promise": "^8.0.3",
+        "simple-format-number": "^0.1.2",
+        "sweetalert2": "^8.17.4"
+    },
+    "standard": {
+        "env": {
+            "mocha": true
+        }
+    }
+}

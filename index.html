@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title> </title>
+  <meta charset="utf-8">
+
+
+  <link rel="stylesheet" href="assets/mhk/css/section.css">
+  <link rel="stylesheet" href="assets/mhk/css/main.css" />
+  <link rel="stylesheet" href="assets/mhk/css/custom.css" />
+  <link rel="stylesheet" href="assets/mhk/css/button.css" />
+  <link rel="stylesheet" href="assets/mhk/css/bs/grid.css" />
+  <link rel="stylesheet" href="assets/mhk/css/bs/bs-utilities.css" />
+  <link rel="stylesheet" href="assets/mhk/css/bs/bs-reboot.css" />
+  <link rel="stylesheet" href="assets/mhk/css/bs/bs-base.css" />
+  <link rel="stylesheet" href="assets/mhk/css/eta-app.css" />
+  <link rel="stylesheet" href="assets/mhk/css/media.css" />
+  <link rel="stylesheet" href="assets/Unminified/notiflix-1.9.1.css" />
+  
+  <link rel="import" href="sections/about.html">
+  <link rel="import" href="sections/billing/welcome.html">
+  <link rel="import" href="sections/billing/billing.html">
+  <link  rel="import" href="sections/billing/help.html">
+  <link rel="import" href="sections/billing/about-billing.html">
+  <link rel="import" href="sections/billing/themes.html">
+
+</head>
+<body id="content-section">
+<section id="sidebar" class="blue-grey mysideBar">
+  <div class="inner mt-3 fw-100 white-text align-left">
+  <nav class="nav js-nav">
+    <ul class="display-10">
+      <li id="button-welcome" data-section="welcome"  class="active menu-link0" hidden>Welcome</li>
+      <li id="button-billing" data-section="billing"  class=" menu-link0">Billing</li>
+      <li id="button-about-billing" data-section="about-billing"  class="">About</li>
+      <li id="button-themes" data-section="themes"  class=" menu-link0">Themes </li>
+      
+      <li id="button-help" data-section="help"  class="inactive menu-link0">Help</li>
+      
+    </ul>
+  </nav>
+  </div>
+</section>
+<section>
+  <main class="content js-content shadow"></main>
+
+  <div class="toast  mt-5 pull-right mr-5 is-shown" role="alert"  id="app-messages">
+  <div class="toast-header">
+  <strong class="mr-auto black-text message-title"></strong>
+    <button type="button" class="ml-2 mb-1 close red-text" data-dismiss="toast" aria-label="Close">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+  <div class="toast-body message-body">
+   
+  </div>
+</div>
+</section>
+  <script>
+     
+    require('./assets/app-script/imports')
+    //require('./assets/app-script/ex-links')
+    require('./assets/app-script/nav')
+    //require('./assets/app-script/demo-btns')
+   // require('./assets/app-script/code-blocks')
+    require('./assets/app-script/normalize-shortcuts')
+   // require('./assets/app-bar/appbar')
+     //require('./renderer-process/themes');
+
+require('bootstrap');
+
+  </script>
+  <script src="assets/Unminified/notiflix-1.9.1.js"></script>
+</body>
+</html>

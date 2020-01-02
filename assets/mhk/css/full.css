@@ -1,0 +1,46 @@
+body{
+    
+    color:#000;
+}
+
+.table{
+    width:100%;
+    font-size: 12px;
+    
+}
+
+.element > p {
+    margin: 0;
+}
+
+tr.border_bottom td {
+
+  border-top: 1px solid #dee2e6;
+  font-size: 12px;
+  color:#000;
+}
+
+
+.example {
+    -webkit-columns: 2  250px;
+    -moz-columns: 2 250px ;
+    columns: 2 250px ;
+    -webkit-column-gap: 2em;
+    -moz-column-gap: 2em;
+    column-gap: 2em;
+    font-size: 12px;
+    margin: 0;
+    -webkit-column-rule-color: #dee2e6;
+  -moz-column-rule-color: #dee2e6;
+  column-rule-color: #dee2e6;
+    column-rule-width: 1px;
+    -webkit-column-rule-style: solid;
+  -moz-column-rule-style: solid;
+  column-rule-style: solid;
+  }
+  
+  .fw-200{
+    -webkit-column-span: all;
+    -moz-column-span: all;
+    column-span: all;
+  }

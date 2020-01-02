@@ -1,0 +1,59 @@
+.theme-box{
+    width: 40px;
+    height: 40px;
+    border: 0px solid #000000;
+    margin: 2px;
+}
+.color-code{
+    background: #eeeeee98
+}
+
+.deep-purple.lighten-1{
+    background: #eeeeee !important;
+    color:#000 !important;
+}
+.white-text{
+    color:rgb(8, 8, 8) !important;
+}
+.text-white{
+    color:rgb(8, 8, 8) !important;
+}
+input[type="submit"], input[type="reset"], input[type="button"], input[type="text"], .button {
+    color: rgb(8, 8, 8) !important;
+}
+.white {
+    background-color: rgba(255, 255, 255, 0.041) !important;
+}
+
+.deep-purple {
+    background-color: #4f4e52a6 !important;
+}
+
+.indigo {
+    background-color: #9192968e !important;
+}
+
+.green.darken-2 {
+    background-color: rgba(47, 52, 56, 0.397) !important;
+}
+.green {
+    background-color: rgba(47, 52, 56, 0.397) !important;
+}
+
+.blue.darken-2 {
+    background-color: rgba(47, 52, 56, 0.397) !important;
+}
+.blue {
+    background-color: rgba(47, 52, 56, 0.397) !important;
+}
+.btn-success {
+    color: #000;
+    background-color: #4e4f5277;
+    border-color: #4e4f5277;
+}
+
+.btn-primary {
+    color: #000;
+    background-color: #4e4f5277;
+    border-color: #4e4f5277;
+}

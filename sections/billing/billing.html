@@ -1,0 +1,144 @@
+<template class="task-template text-body">
+    <section id="billing-section" class="section js-section theme lighten-1 style1 spotlights section-wrapper">
+        <section>
+            <!-- section-2-->
+            <div class="container mt-3">
+            <div id="make-printable00">
+                <div class="col-sm  shadow theme darken-2">
+                        <div class="text-center0">
+                            <div class="row ">
+                                <h5 class="display-5 mb-2 mt-2 pm text-white">G3T Billing</h5>     
+                            </div>
+                        </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm mt-2">
+                        <div class="content shadow">
+                            <div class="features height-400">
+                                <section>
+                                    <div class="card height-350 width-8000">
+                                        <div class="card-header theme  darken-3">
+                                            <i class="fa fa-folder-open-o white-text mr-3"></i>
+                                            <span class="display-8 white-text fw-200"> Browse CSV File</span>
+                                        </div>
+                                        <div class="card-body " id="scanned-list">   
+                                        </div>
+                                        <div class="card-footer">
+                                            <button class="mt-2 btn btn-outline-primary pull-right btn-sm"
+                                                id="scanButton" hidden>Scan
+                                                File</button>
+                                            <a href='#' class="mt-2 btn btn-outline-primary pull-right btn-sm browsButton"
+                                                id="browsBtn">Browse </a>
+                                            <button class="mt-2 btn btn-outline-danger  pull-left btn-sm  clear-combine"
+                                                id="clear-button">Clear All</button>
+                                            <button class="btn btn-outline-info pull-left btn-sm mt-2 ml-5 combine"
+                                                id="combine-button">Create Combine
+                                                CDR</button>
+                                        </div>
+                                        <!--card footer end-->
+                                    </div>
+                                </section>
+                                <!--inner section end-->
+                            </div>
+                            <!--feature end-->
+                        </div>
+                        <!--conent end-->
+                    </div><!-- ./col-sm2 -->
+                    <div class="col-sm mt-2" id="action-btn">
+                        <div class="content shadow">
+                            <div class="features height-400">
+                                <section>
+                                    <div class="card height-350">
+                                        <div class="card-header   theme  darken-3">
+                                            <i class="fa fa-calculator white-text mr-3"></i>
+                                            <span class="display-8 white-text fw-200">Calculate Billing </span>
+                                        </div>
+                                        <div class="card-body">
+                                            <h5 class="display-small small theme darken-3 text-white scanned-file " id="fn"></h5>
+                                            <div id="all-buttons" class="ml-2">
+                                            <h5  class="display-9 grey-text darken-3 fw-200 ml-2 bottom-line">View Summary Data</h5>
+                                                <button type="button" class="btn  btn-outline-primary  all btn-sm mt-2 "
+                                                    id="button_01">01*</button>
+                                                <button type="button" class="btn  btn-outline-primary  all btn-sm mt-2"
+                                                    id="button_02">02*</button>
+                                                <button type="button" class="btn  btn-outline-primary  all btn-sm mt-2"
+                                                    id="button_03">03*</button>
+
+                                                <button type="button" class="btn  btn-outline-primary  all btn-sm mt-2 "
+                                                    id="button_087">087*</button>
+                                                <button type="button" class="btn  btn-outline-primary  all btn-sm mt-2"
+                                                    id="button_084">084*</button>
+                                                <button type="button" class="btn  btn-outline-primary  all btn-sm mt-2"
+                                                    id="button_080">080*</button>
+                                                <button type="button" class="btn  btn-outline-primary  all btn-sm mt-2"
+                                                    id="button_09">09*</button>
+
+                                                <button type="button" class="btn  btn-outline-primary  all btn-sm mt-2 "
+                                                    id="button_1xx">1xx</button>
+                                                <button type="button" class="btn  btn-outline-primary  all btn-sm mt-2 "
+                                                    id="button_mobile">Mobile</button>
+                                                <button type="button" class="btn  btn-outline-primary  all btn-sm mt-2"
+                                                    id="button_int">International</button>
+                                                <button type="button" class="btn  btn-outline-primary  all btn-sm mt-2"
+                                                    id="button_special">Special
+                                                    Nos</button>
+                                            </div>
+                                            <div class="mt-1" id="pdf-buttons">
+                                            <h5  class="display-9 grey-text darken-3 fw-200 ml-2 bottom-line">Create Summary PDF's </h5>
+                                             
+                                                <button class="mr-4 btn  btn-success all btn-sm mt-2 pdf-btn ml-2" id="button_pa"><i
+                                                        class="fa fa-file-pdf-o"></i> Create G3T PDF</button>
+                                                <button class="mr-1 btn  btn-primary all btn-sm mt-2 pdf-btn" id="button_pc"><i
+                                                        class="fa fa-file-pdf-o"></i> Create Client PDF</button>
+                                                <!--button class="mr-4 btn  btn-info all btn-sm mt-2 pdf-btn" id="full-bill_pc"><i
+                                                        class="fa fa-file-pdf-o"></i>Full Bill</button-->
+                                            </div>
+                                        </div>
+                                        <!--card body end-->
+                                        <div class="card-footer">
+                                            <button class="mt-2 btn  btn-outline-primary all btn-sm pull-right" id="button_all">All Phones</button>
+                                            <button class="mt-2 btn  btn-outline-success all btn-sm" id="button_landline">UK Landline</button>
+                                            <!--button class="ml-4 mt-2 btn  btn-outline-success all btn-sm " id="full-bill">Full Bill</button -->
+                                        </div>
+                                        <!--card footer end-->
+                                    </div>
+                                </section>
+                                <!--innersection end-->
+                            </div>
+                        </div>
+                    </div><!-- ./col-sm2 -->
+                </div><!-- ./row-->
+                </div> <!-- ./make printable-->
+                <div class="content">
+                    <div class="col-sm  shadow ">
+                        <div id="summary-title" class="text-center0">
+                            <div class="row  theme darken-2 pt-2 pb-2">
+                                <h5 class="display-6 mb-2 mt-2 pm text-white text-darken-3 " id="bill-summary">Bill Summary</h5> 
+                                        
+                            </div>
+                        </div>
+                        
+                    </div>
+                    
+                    <div class="row" id="data-card-combine"> </div><!-- ./row-->
+                    <div class="row" id="data-card" >  </div><!-- ./row-->
+                  
+
+                
+                </div>
+
+                 <div class="row">  
+                   <div class="row hide" id="full-data-card" hidden >  </div><!-- ./row-->
+                     
+                 </div><!-- ./row-->
+                
+            </div><!-- ./container-->
+        </section><!-- ./section-2-->
+
+
+        <script type="text/javascript">
+            require('./renderer-process/app');
+        </script>
+
+    </section>
+</template>

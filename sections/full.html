@@ -1,0 +1,55 @@
+<html>
+
+<head>
+<meta charset="utf-8">
+
+  <!--link rel="stylesheet" href="../assets/css/variables.css">
+  <link rel="stylesheet" href="../assets/css/nativize.css">
+  <link rel="stylesheet" href="../assets/css/global.css">
+  <link rel="stylesheet" href="../assets/css/about.css">
+  <link rel="stylesheet" href="../assets/css/nav.css">
+  <link rel="stylesheet" href="../assets/css/section.css">
+  <link rel="stylesheet" href="../assets/css/demo.css">
+  <link rel="stylesheet" href="../assets/css/github.css">
+
+  <link rel="stylesheet" href="../assets/mhk/css/main.css" />
+  <link rel="stylesheet" href="../assets/mhk/css/custom.css" />
+  <link rel="stylesheet" href="../assets/mhk/css/button.css" />
+  <link rel="stylesheet" href="../assets/mhk/css/bs/grid.css" />
+  <link rel="stylesheet" href="../assets/mhk/css/bs/bs-utilities.css" />
+  <link rel="stylesheet" href="../assets/mhk/css/bs/bs-reboot.css" />
+  <link rel="stylesheet" href="../assets/mhk/css/bs/bs-base.css" />
+  <link rel="stylesheet" href="../assets/mhk/css/eta-app.css" />
+  <link rel="stylesheet" href="../assets/mhk/css/media.css" />
+  <link rel="stylesheet" href="../assets/mhk/css/print.css" media="print" /-->
+
+    <link rel="stylesheet" href="../assets/mhk/css/full.css" />
+ 
+</head>
+
+
+<body>
+<div class='row '>
+    <div  class="element">
+    <p  id='full-pdf'></p>
+    </div>
+  
+</div>
+    <script>
+        const ipcRenderer = require("electron").ipcRenderer;
+        const $ = require('jquery')
+        /*ipcRenderer.on("print", (event, content) => {
+            document.body.innerHTML = content;
+            ipcRenderer.send("readyToPrint");
+        });
+        */
+        ipcRenderer.on("savePDF", (event, content) => {
+            var cont = content.item1
+            var fn = content.filename
+            document.body.innerHTML = cont;
+            ipcRenderer.send("readyToSavePDF", fn);
+        });
+    </script>
+</body>
+
+</html>

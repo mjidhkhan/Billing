@@ -1,0 +1,77 @@
+/* Section ------------------ */
+
+.section {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  overflow-x: hidden;
+  overflow-y: auto;
+  color: var(--color-accent);
+  /*Hide*/pointer-events: none;
+  visibility: hidden;
+  opacity: 0;
+  transition: transform 2s;
+  transform: rotate(0deg) scale(0.1)        ;
+  -webkit-transition: transform 2s;
+  -moz-transition: transform 2s;
+  -ms-transition: transform 2s;
+  -o-transition: transform 2s;
+}
+.section.is-shown {
+  pointer-events: auto;
+  visibility: visible;
+  opacity: 1;
+  transform:rotate(0deg)scale(1)  ;
+  -webkit-transform:rotate(0deg)scale(1)  ;
+  -moz-transform:rotate(0deg)scale(1)  ;
+  -ms-transform:rotate(0deg)scale(1)  ;
+  -o-transform:rotate(0deg)scale(1)  ;
+}
+
+.section h3,
+.section p {
+  color: var(--color);
+}
+
+@media screen and (max-width: 1980px) {
+  .section-wrapper {
+    position: absolute;
+    margin-left: 8em;
+    padding: 2rem 1rem 1rem 2rem;
+  }
+  .section{
+    left:8em
+  }
+}
+.section-wrapper {
+  margin-left: 0em;
+  padding: 4rem 1rem 1rem 2rem;
+    display: flex;
+    flex-direction: column;
+}
+@media screen and  (min-width: 1980px) {
+  .section-wrapper {
+    margin-left: 0em;
+    padding: 2rem 1rem 1rem 2rem;
+  }
+  
+  .section{
+    left:8em
+  }
+  
+}
+
+.section-icon {
+  width: 32px;
+  height: 32px;
+  vertical-align: middle;
+  margin-right: .5em;
+}
+
+
+.wrapper {
+    position: relative;
+    margin-top: 22px;
+}
