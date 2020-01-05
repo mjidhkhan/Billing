@@ -1,74 +1,86 @@
-
-module.exports ={
-  "special":{
-    "duration":[
-      {phone:'4487', limit:4, type:'int', lookup: 'duration'},
-      {phone:'4484', limit:4, type:'int', lookup: 'duration'},
-      {phone:'449', limit:3, type:'int', lookup: 'duration'},
+module.exports = {
+  special: {
+    duration: [
+      { phone: "4487", limit: 4, type: "int", lookup: "duration" },
+      { phone: "4484", limit: 4, type: "int", lookup: "duration" },
+      { phone: "449", limit: 3, type: "int", lookup: "duration" }
     ],
-    "costs":[
-      {phone:'4487', limit:4, type:'int', lookup: 'costs'},
-      {phone:'4484', limit:4, type:'int', lookup: 'costs'},
-      {phone:'449', limit:3, type:'int', lookup: 'costs'},
+    costs: [
+      { phone: "4487", limit: 4, type: "int", lookup: "costs" },
+      { phone: "4484", limit: 4, type: "int", lookup: "costs" },
+      { phone: "449", limit: 3, type: "int", lookup: "costs" }
     ],
-    "wscosts":[
-      {phone:'4487', limit:4, type:'int', lookup: 'wholesaleCosts'},
-      {phone:'4484', limit:4, type:'int', lookup: 'wholesaleCosts'},
-      {phone:'449', limit:3, type:'int', lookup: 'wholesaleCosts'},
+    wscosts: [
+      { phone: "4487", limit: 4, type: "int", lookup: "wholesaleCosts" },
+      { phone: "4484", limit: 4, type: "int", lookup: "wholesaleCosts" },
+      { phone: "449", limit: 3, type: "int", lookup: "wholesaleCosts" }
     ]
   },
 
-  "mobile":{
-    "duration":[{phone:'447', limit:3, type:'int', lookup: 'duration'}],
-    "costs":[ {phone:'447', limit:3, type:'float', lookup: 'costs'}],
-    "wscosts":[ {phone:'447', limit:3, type:'float', lookup: 'wholesaleCosts'}]
+  mobile: {
+    duration: [{ phone: "447", limit: 3, type: "int", lookup: "duration" }],
+    costs: [{ phone: "447", limit: 3, type: "float", lookup: "costs" }],
+    wscosts: [
+      { phone: "447", limit: 3, type: "float", lookup: "wholesaleCosts" }
+    ]
   },
 
-  "uk_01":{
-    "duration":[{phone:'441', limit:3, type:'int', lookup: 'duration'}],
-    "costs":[{phone:'441', limit:3, type:'float', lookup: 'costs'}],
-    "wscosts":[{phone:'441', limit:3, type:'float', lookup: 'wholesaleCosts'}]
+  uk_01: {
+    duration: [{ phone: "441", limit: 3, type: "int", lookup: "duration" }],
+    costs: [{ phone: "441", limit: 3, type: "float", lookup: "costs" }],
+    wscosts: [
+      { phone: "441", limit: 3, type: "float", lookup: "wholesaleCosts" }
+    ]
   },
-  "uk_02":{
-    "duration":[{phone:'442', limit:3, type:'int', lookup: 'duration'},],
-    "costs":[  {phone:'442', limit:3, type:'float', lookup: 'costs'},],
-    "wscosts":[ {phone:'442', limit:3, type:'float', lookup: 'wholesaleCosts'}]
+  uk_02: {
+    duration: [{ phone: "442", limit: 3, type: "int", lookup: "duration" }],
+    costs: [{ phone: "442", limit: 3, type: "float", lookup: "costs" }],
+    wscosts: [
+      { phone: "442", limit: 3, type: "float", lookup: "wholesaleCosts" }
+    ]
   },
-  "uk_03":{
-    "duration":[ {phone:'443', limit:3, type:'int', lookup: 'duration'},],
-    "costs":[  {phone:'443', limit:3, type:'float', lookup: 'costs'},],
-    "wscosts":[ {phone:'443', limit:3, type:'float', lookup: 'wholesaleCosts'}]
+  uk_03: {
+    duration: [{ phone: "443", limit: 3, type: "int", lookup: "duration" }],
+    costs: [{ phone: "443", limit: 3, type: "float", lookup: "costs" }],
+    wscosts: [
+      { phone: "443", limit: 3, type: "float", lookup: "wholesaleCosts" }
+    ]
   },
-  "uk_087":{
-    "duration":[ {phone:'4487', limit:4, type:'int', lookup: 'duration'},],
-    "costs":[  {phone:'4487', limit:4, type:'float', lookup: 'costs'},],
-    "wscosts":[ {phone:'4487', limit:4, type:'float', lookup: 'wholesaleCosts'}]
+  uk_087: {
+    duration: [{ phone: "4487", limit: 4, type: "int", lookup: "duration" }],
+    costs: [{ phone: "4487", limit: 4, type: "float", lookup: "costs" }],
+    wscosts: [
+      { phone: "4487", limit: 4, type: "float", lookup: "wholesaleCosts" }
+    ]
   },
-  "uk_084":{
-    "duration":[ {phone:'4484', limit:4, type:'int', lookup: 'duration'},],
-    "costs":[  {phone:'4484', limit:4, type:'float', lookup: 'costs'},],
-    "wscosts":[ {phone:'4484', limit:4, type:'float', lookup: 'wholesaleCosts'}]
+  uk_084: {
+    duration: [{ phone: "4484", limit: 4, type: "int", lookup: "duration" }],
+    costs: [{ phone: "4484", limit: 4, type: "float", lookup: "costs" }],
+    wscosts: [
+      { phone: "4484", limit: 4, type: "float", lookup: "wholesaleCosts" }
+    ]
   },
-  "uk_080":{
-    "duration":[ {phone:'4480', limit:4, type:'int', lookup: 'duration'}],
-    "costs":[  {phone:'4480', limit:4, type:'float', lookup: 'costs'}],
-    "wscosts":[ {phone:'4480', limit:4, type:'float', lookup: 'wholesaleCosts'}]
+  uk_080: {
+    duration: [{ phone: "4480", limit: 4, type: "int", lookup: "duration" }],
+    costs: [{ phone: "4480", limit: 4, type: "float", lookup: "costs" }],
+    wscosts: [
+      { phone: "4480", limit: 4, type: "float", lookup: "wholesaleCosts" }
+    ]
   },
-  "uk_09":{
-    "duration":[ {phone:'449', limit:3, type:'int', lookup: 'duration'}],
-    "costs":[  {phone:'449', limit:3, type:'float', lookup: 'costs'}],
-    "wscosts":[ {phone:'449', limit:3, type:'float', lookup: 'wholesaleCosts'}]
+  uk_09: {
+    duration: [{ phone: "449", limit: 3, type: "int", lookup: "duration" }],
+    costs: [{ phone: "449", limit: 3, type: "float", lookup: "costs" }],
+    wscosts: [
+      { phone: "449", limit: 3, type: "float", lookup: "wholesaleCosts" }
+    ]
   },
-  "international":{
-    "duration":[{phone:'',limit:2, type:'int', lookup: 'duration'}],
-    "costs":[{phone:'',limit:2, type:'float', lookup: 'costs'}],
-    "wscosts":[{phone:'',limit:2, type:'float', lookup: 'wholesaleCosts'}]
-  },
-    
-
-
-}
-/*
+  international: {
+    duration: [{ phone: "", limit: 2, type: "int", lookup: "duration" }],
+    costs: [{ phone: "", limit: 2, type: "float", lookup: "costs" }],
+    wscosts: [{ phone: "", limit: 2, type: "float", lookup: "wholesaleCosts" }]
+  }
+};
+/*  removed 
 module.exports ={
   "landlineAll":{
     "duration":[
