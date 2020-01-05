@@ -441,7 +441,8 @@ function Body(data) {
     )}</td></tr>`;
   });
 
-  table += `<tr class=" display-8  grey lighten-3"><td scope="row" style="text-align:left">Total</td>`;
+  table += `<tr class=" display-8  grey lighten-3">
+            <td scope="row" style="text-align:left">Total</td>`;
   if (m_calls > 0) {
     tuk_calls = tuk_calls + m_calls;
   }
