@@ -357,7 +357,7 @@ function prepareFileList(list){
         filelist += `<td> ${element.name}</td>`
         filelist += `<td> ${element.size}</td>`
         filelist +=`<td><div class=" " id="progress-${fid}"><div class=" " id="PRG-${fid}"></div></div>`
-        filelist +=`<div  class="default-text pending-text" id="PRGT-${fid}">Pending...</div></td> `;
+        filelist+=`<div  class="default-text pending-text" id="PRGT-${fid}">Pending...</div></td> `;
         filelist += `</div>`
         filelist += `</td>`
         filelist += `<td><button type="button"  class="btn btn-outline-secondary btn-sm scnButton" id ="BTN-${fid}">`
