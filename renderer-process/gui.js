@@ -311,6 +311,36 @@ function fileName(name) {
   return fn;
 }
 
+<<<<<<< HEAD
+function prepareFileList(list){
+    buttons = []
+    
+     var filelist = ''
+    
+    filelist += `<table class="table table-sm table-borderless" >`
+    filelist +=`<thead class="fw-500">`
+    filelist +=`<tr class="theme  darken-3 text-white">`
+    filelist +=`<th scope="col">File</th><th scope="col">Size</th>`
+    filelist +=`<th scope="col">Status</th><th scope="col">Action</th>`
+    filelist += `</tr></thead>`
+    filelist += `<tbody class="small"><tr>`
+    list.forEach(element => {
+        var fid = fileID(element.fullpath,element.name, element.size)
+        buttons.push(`BTN-${fid}`)
+        filelist += `<td> ${element.name}</td>`
+        filelist += `<td> ${element.size}</td>`
+        filelist +=`<td><div class=" " id="progress-${fid}"><div class=" " id="PRG-${fid}"></div></div>`
+        filelist+=`<div  class="default-text pending-text" id="PRGT-${fid}">Pending...</div></td> `;
+        filelist += `</div>`
+        filelist += `</td>`
+        filelist += `<td><button type="button"  class="btn btn-outline-secondary btn-sm scnButton" id ="BTN-${fid}">`
+        filelist += `Scan</button></td>`
+        filelist += `</tr>`
+    })
+    filelist += `</tbody></table>` 
+    //buttons.push(filelist)
+    return filelist
+=======
 function prepareFileList(list) {
   buttons = [];
 
@@ -339,6 +369,7 @@ function prepareFileList(list) {
   filelist += `</tbody></table>`;
   //buttons.push(filelist)
   return filelist;
+>>>>>>> 8197c51def2ee2ab40ac6d6b527bf3a8f2b5566f
 }
 
 function fileID(path, file, size) {
