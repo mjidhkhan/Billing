@@ -580,5 +580,5 @@ function findReopenMenuItem() {
 if (is.windows()) {
     
     const helpMenu = template[template.length - 1].submenu;
-    //addUpdateMenuItems(helpMenu, 0);
+    addUpdateMenuItems(helpMenu, 0);
 }
